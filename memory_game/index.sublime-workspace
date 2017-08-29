@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"card",
+				"cardTwo"
+			],
+			[
+				"cards",
+				"cardsInPlay"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -52,9 +60,13 @@
 	},
 	"file_history":
 	[
+		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/memory_game.sublime-workspace",
+		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/index.html",
+		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/memory_game.sublime-project",
+		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/js/main.js",
+		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/CSS/style.css",
 		"/Users/jonnyhall/fundamentals/memory_game/js/main.js",
 		"/Users/jonnyhall/fundamentals/memory_game/CSS/style.css",
-		"/Users/jonnyhall/fundamentals/wdi-fundamentals-memorygame/memory_game/index.html",
 		"/Users/jonnyhall/fundamentals/memory_game/index.html",
 		"/Users/jonnyhall/.Trash/index.html",
 		"/Users/jonnyhall/Dropbox/General Assembly/Fundamentals/Memory Card Game/index.html",
