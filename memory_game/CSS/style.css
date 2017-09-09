@@ -83,4 +83,12 @@ font-size: 0;
 	color: #F15B31;
 	font-weight: 700;
 }
+button {
+	font-family: Raleway;
+	background-color: #F15B31;
+	color: #0D2C40;
+	font-weight: 600;
+	font-size: 20px;
+
+}
 
