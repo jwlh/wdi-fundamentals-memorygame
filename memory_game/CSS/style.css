@@ -51,8 +51,9 @@ main {
 	margin: 35px auto;
 }
 img {
-	margin: 40px 8px;
+	margin: 8px 8px;
 }
+
 footer {
 	text-transform: uppercase;
 	padding: 0px 20px;
@@ -91,4 +92,3 @@ button {
 	font-size: 20px;
 
 }
-
