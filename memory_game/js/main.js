@@ -45,7 +45,15 @@ var cards = [
 cards.sort(function(a, b){return 0.5 - Math.random()});
 
 //array to store cards in play
-var cardsInPlay = [];
+var cardsInPlayRank = [];
+var cardsInPlaySuit = [];
+
+// reset button
+function resetGame() {
+	location.reload();
+}
+
+document.getElementById('reset').addEventListener('click', resetGame)
 
 //create board
 function createBoard() {
@@ -60,30 +68,26 @@ function createBoard() {
 
 //function to check for match
 function checkForMatch() {
-	if (cardsInPlay[0] === cardsInPlay[1]) {
+	if (cardsInPlayRank[0] === cardsInPlayRank[1] && cardsInPlaySuit[0] !== cardsInPlaySuit[1]) {
 		alert("You found a match!");
 	} else {
 		alert("Sorry, try again.");
+		resetGame();
 	}
-	cardsInPlay.length = 0;
+	cardsInPlayRank.length = 0;
+	cardsInPlaySuit.length = 0;
 };
 
 //function to flip a card
 function flipCard() {
 	var cardId = this.getAttribute('data-id');
-	cardsInPlay.push(cards[cardId].rank);
+	cardsInPlayRank.push(cards[cardId].rank);
 	this.setAttribute('src', cards[cardId].cardImage);
+	cardsInPlaySuit.push(cards[cardId].suit);
 
-	if (cardsInPlay.length === 2) {
+	if (cardsInPlayRank.length === 2) {
 	checkForMatch();
 	}
 };
 
 createBoard();
-
-// reset button
-function resetGame() {
-	location.reload();
-}
-
-document.getElementById('reset').addEventListener('click', resetGame)
